@@ -4,12 +4,12 @@ import streamlit as st
 
 # Page configuration
 st.set_page_config(
-    page_title="Stock Price Simulator & Theory",
+    page_title="Stock Price Simulator",
     page_icon="📈",
     layout="wide",
 )
 
-st.title("📈 Stock Price Simulator & Modeling Explorer")
+st.title("📈 Stock Price Simulator")
 
 # Create the 4 requested tabs
 tab1, tab2, tab3, tab4 = st.tabs([
