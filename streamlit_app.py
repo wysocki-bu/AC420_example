@@ -9,7 +9,7 @@ st.set_page_config(
     layout="wide",
 )
 
-st.title("📈 Stock Price Simulator")
+st.title("📈 Stock Price Simulator (https://ac420example.streamlit.app/)")
 
 # Create the 4 requested tabs
 tab1, tab2, tab3, tab4 = st.tabs([
