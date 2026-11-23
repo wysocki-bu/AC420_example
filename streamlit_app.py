@@ -106,10 +106,10 @@ with tab2:
     st.markdown(
         "🔗 **GitHub Repository:** "
         "[https://github.com](https://github.com) "
-        "*(Placeholder link)*"
+        "[https://github.com/wysocki-bu/AC420_example](https://github.com/wysocki-bu/AC420_example) "
     )
     st.info(
-        "Below is the exact Python script powering this application, read dynamically from disk."
+        "Below is the exact Python script powering this application, read dynamically from Github Repository."
     )
 
     try:
@@ -127,15 +127,13 @@ with tab3:
     st.header("Code Sources, Libraries & Attribution")
     st.markdown(
         "This application was built by combining open-source Python libraries, "
-        "standard quantitative finance formulas, and AI-assisted code generation."
+        "standard finance formulas, and AI-assisted layout assistance."
     )
 
     st.subheader("1. AI Assistance")
     st.markdown(
         """
-        * **LLM Code Generation (Google Gemini):** Used to scaffold the multi-tab Streamlit layout, 
-          implement the vectorized NumPy Geometric Brownian Motion algorithm, and structure the 
-          educational documentation.
+        * **LLM Code Generation (Google Gemini):** Used to scaffold the multi-tab Streamlit layout.
         """
     )
 
@@ -220,19 +218,5 @@ with tab4:
         * **$-\frac{1}{2}\sigma^2$**: The *Itô correction term*, which accounts for the fact that 
           volatility drags down geometric compounding (e.g., a 50% drop followed by a 50% gain leaves 
           you at 75% of your starting value, not 100%).
-        """
-    )
-
-    st.subheader("3. Real-World Limitations (Help & Caveats)")
-    st.warning(
-        """
-        **Disclaimer:** GBM is a mathematical baseline, not a crystal ball. Real stock prices differ 
-        from pure GBM in several important ways:
-        * **Fat Tails (Kurtosis):** Real markets experience extreme crashes and rallies far more often 
-          than a normal bell curve predicts.
-        * **Volatility Clustering:** Calm periods and turbulent periods tend to bunch together 
-          rather than maintaining a constant $\sigma$.
-        * **Price Jumps:** Overnight earnings or geopolitical shocks cause sudden gaps rather than 
-          continuous smooth paths.
         """
     )
