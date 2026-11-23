@@ -111,7 +111,7 @@ with tab2:
         "EX. 1: Below is the Python code powering this app (copied from Github Repository)."
     )
 
-    example_code = '''import numpy as np
+    example_code = '''    import numpy as np
         import pandas as pd
         import streamlit as st
         etc.'''         
