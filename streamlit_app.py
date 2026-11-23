@@ -111,13 +111,10 @@ with tab2:
         "EX. 1: Below is the Python code powering this app (copied from Github Repository)."
     )
 
-    st.title("Python Code Display Example")
-    st.write("Here is the Python code for this app:")
-
     example_code = '''import numpy as np
-                        import pandas as pd
-                        import streamlit as st
-                       etc.'''         
+        import pandas as pd
+        import streamlit as st
+        etc.'''         
     st.code(example_code, language="python", line_numbers=True)
 
     st.info(
