@@ -98,9 +98,9 @@ with tab1:
         st.dataframe(df_prices.style.format("${:.2f}"), use_container_width=True)
 
 
-# ==========================================
-# TAB 2: ACTUAL PYTHON CODE & GITHUB LINK
-# ==========================================
+# ==================================================================================
+# TAB 2: (A) GITHUB LINK, (B) COLAB CODE (IF USED), (C) ACTUAL STREAMLIT PYTHON CODE
+# ==================================================================================
 with tab2:
     st.header("Full Application Source Code")
     st.markdown(
@@ -108,7 +108,20 @@ with tab2:
         "[https://github.com/wysocki-bu/AC420_example](https://github.com/wysocki-bu/AC420_example) "
     )
     st.info(
-        "Below is the exact Python script powering this application, read dynamically from Github Repository."
+        "EX. 1: Below is the Python code powering this app (copied from Github Repository)."
+    )
+
+    st.title("Python Code Display Example")
+    st.write("Here is the Python code for this app:")
+
+    example_code = '''import numpy as np
+                        import pandas as pd
+                        import streamlit as st
+                       etc.'''         
+    st.code(example_code, language="python", line_numbers=True)
+
+    st.info(
+        "EX. 2: Below is the Python code powering this app, read dynamically from Github Repository."
     )
 
     try:
