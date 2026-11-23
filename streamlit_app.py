@@ -4,7 +4,7 @@ import streamlit as st
 
 # Page configuration
 st.set_page_config(
-    page_title="Stock Price Simulator",
+    page_title="Stock Price Simulator (https://ac420example.streamlit.app/)",
     page_icon="📈",
     layout="wide",
 )
@@ -105,7 +105,6 @@ with tab2:
     st.header("Full Application Source Code")
     st.markdown(
         "🔗 **GitHub Repository:** "
-        "[https://github.com](https://github.com) "
         "[https://github.com/wysocki-bu/AC420_example](https://github.com/wysocki-bu/AC420_example) "
     )
     st.info(
